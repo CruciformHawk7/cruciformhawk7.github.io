@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.11.0/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Hello!</title>
+</head>
+
+<body>
+    <header></header>
+
+    <section class="sector sector-1">
+        <div class="floater floater1">
+            <svg width="32px" height="32px">
+                <circle cx="16" cy="16" r="6" stroke-width="3px" fill="#fff0" stroke="var(--strokes)" >
+                    <animate attributename="r" values="6;10;6" dur="10s" repeatcount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <div class="floater floater2">
+            <svg width="40px" height="80px">
+                <line x1="5" y1="75" x2="35" y2="5" stroke="var(--strokes)" stroke-linecap="butt" 
+                    stroke-width="3">
+                </line> 
+            </svg>
+        </div>
+        <div class="floater floater3">
+            <svg width="40px" height="80px">
+                <line x1="8" y1="70" x2="38" y2="15" stroke="var(--accent)" stroke-linecap="butt" 
+                    stroke-width="3">
+                </line> 
+            </svg>
+        </div>
+        <div class="floater floater4">
+            <svg viewbox="0 0 400 400">
+                <defs>
+                    <linearGradient id="orange">
+                        <stop offset="100%" stop-color="#FFB74D" />
+                        <stop offset="0%" stop-color="#FFC107" />
+                    </linearGradient>
+                </defs>
+                <g transform="rotate(-30)">
+                    <rect x="60" y="180" width="200" height="60" rx="30" fill="none" stroke="var(--accent)" stroke-width="3">
+                        <animate attributeName="x" values="60;65;60" dur="10s" repeatCount="indefinite" />
+                    </rect>
+                    <animateTransform attributeName="transform" type="rotate" values="-30;-35;-30"  dur="30s" repeatCount="indefinite">
+                </g>
+                <g transform="rotate(-50)">
+                    <rect x="-160" y="180" width="300" height="60" rx="30" fill="url(#orange)" stroke="#FFC107" stroke-width="3" >
+                        <animate attributeName="x" values="-160;-180;-160" dur="10s" repeatCount="indefinite" />
+                    </rect>
+                    <animateTransform attributeName="transform" type="rotate" values="-50;-45;-50"  dur="30s" repeatCount="indefinite"></animateTransform>
+                </g>
+            </svg>
+        </div>
+        <div class="hero">
+            <div class="rellax" data-rellax-speed="2">
+                <img src="res/img1.png">
+                <h1>&nbsp;&nbsp;Hey there!&nbsp;&nbsp;</h1>
+                <h3>You've reached Nikhil Hari.</h3>
+                <p>I'm a Computer Science Masters student, studying in Kristu Jayanti College.
+                </p>
+            </div>
+        </div>
+        <div class="floater floater5">
+            <svg viewBox="0 0 10 100">
+                <g transform="translate(0,-30)">
+                    <line x1="5" x2="5" y1="0" y2="50" stroke-width="1px" stroke="var(--text)" />
+                </g>
+                <animateTransform attributeName="transform" type="translate" values="0 -30; 0 250" dur="5s" repeatCount="indefinite" />
+            </svg>
+        </div>
+    </section>
+
+    <section class="sector">
+        <div class="section-content">
+            <h1><strong>Proficieny</strong></h1>
+            <p style="margin: 5rem 0;">
+                I am proficient in .NET Core, especially ASP.NET Core and Blazor. I have done many projects in .NET and C#, and these are one of my strongest fields.
+                <br /> <br /> I started my coding journey in Visual Basic, mostly as a hobby project, and developed a few small VB6 applications, one being a small music player based on Windows API. I learnt Java soon in my 10th curriculum, and further
+                learnt a lot of Java, making Java as the first programming language that I actively used OOPs concepts in. I am quite familiar with OOPs concepts and how Java does it, and started with GUI programming in Java. I learnt Java Swing, and
+                JavaFX over the course. Since JavaFX is best done with maven, I picked up a lot of maven in this process. I have also experimented with C++, Kotlin, Python, and JavaScript.
+                <br/> <br /> Today, I am familiar with C# and the .NET Core ecosystem, Java, JavaScript, Web Designing, and good old C.
+                <br /> <br /> You can take a look at my GitHub: <a href="https://github.com/cruciformhawk7">cruciformhawk7</a>.
+            </p>
+        </div>
+    </section>
+
+    <section class="sector" style="overflow: hidden">
+        <div class="section-content">
+            <h1><strong>Projects I've worked on</strong></h1>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <div class="left image">
+                    <img src="res/img4.svg" class="imgbg">
+                    <img src="res/fwas.png" class="imgfg rellax" data-rellax-speed="1" data-rellax-percentage="0.5">
+                </div>
+                <div class="right text">
+                    <h2><strong>Faculty Workload Allocation System (FWAS)</strong></h2>
+                    <p>Frontend for FWAS Server using Blazor. Most of the components designed from scratch. Uses REST Service to communicate with the backend API Server. Features include Caching, micro-service ready architecture, and a neat dynamic UI.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="left text">
+                    <h2><strong>Noot</strong></h2>
+                    <p>A very simple note taking PWA, made with Blazor WebAssembly, featuring MVC architecture. Stores data on LocalStorage. Responsive UI for phones, or PC. All the components are written from scratch.
+                    </p>
+                </div>
+                <div class="right image">
+                    <img src="res/img1.svg" class="imgbg">
+                    <img src="res/noot.png" class="imgfg rellax" data-rellax-speed="1" data-rellax-percentage="0.5">
+                </div>
+            </div>
+            <div class="project">
+                <div class="left image">
+                    <img src="res/img3.svg" class="imgbg">
+                    <img src="res/ncb.png" class="imgfg rellax" data-rellax-speed="1" data-rellax-percentage="0.5">
+                </div>
+                <div class="right text">
+                    <h2><strong>SwiftBank</strong></h2>
+                    <p>SwiftBank is a banking suite written in ASP.NET Core and MongoDB. It features secured sessions, email logins, and simplified transactions. Here, I learnt a lot of MongoDB and schema generalisation, improving Models and sharing the
+                        schema with MongoDB, improving session handling, and Unit Testing.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="left text">
+                    <h2><strong>Dict.cs</strong></h2>
+                    <p>A very simple implementation of autocorrect with HashMap (Dictionary), written in C#. Includes word learning, neighbour suggestions, typo detection, and word completion. Here, I learnt how to improve algorithm runtimes, avoiding hash
+                        collisions and writing algorithms to enhance inbuilt features of dictionary.
+                    </p>
+                </div>
+                <div class="right image">
+                    <img src="res/img4.svg" class="imgbg">
+                    <img src="res/dct.png" class="imgfg rellax" data-rellax-speed="1" data-rellax-percentage="0.5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+        <h1 style="text-align: center;"><strong>Reach me:</strong></h1>
+        <br />
+        <div class="foot">
+            <a href="https://twitter.com/cruciformhawk7"> <img src="res/twitter.svg"></a>
+            <a href="https://www.linkedin.com/in/nikhilhari/"> <img src="res/linkedin.png"></a>
+            <a href="https://github.com/CruciformHawk7"><img src="res/github.png"></a>
+            <a href="mailto:nikhil_hari@live.com">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg style="width: 3rem;" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+                    <title>ic_fluent_mail_48_regular</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="var(--bg)" fill-rule="evenodd">
+                        <g id="ic_fluent_mail_48_regular" fill="var(--bg)" fill-rule="nonzero">
+                            <path d="M37.75,9 C40.6494949,9 43,11.3505051 43,14.25 L43,33.75 C43,36.6494949 40.6494949,39 37.75,39 L10.25,39 C7.35050506,39 5,36.6494949 5,33.75 L5,14.25 C5,11.3505051 7.35050506,9 10.25,9 L37.75,9 Z M40.5,18.351 L24.6023984,27.0952699 C24.2689733,27.2786537 23.8727436,27.2990297 23.5253619,27.1563978 L23.3976016,27.0952699 L7.5,18.351 L7.5,33.75 C7.5,35.2687831 8.73121694,36.5 10.25,36.5 L37.75,36.5 C39.2687831,36.5 40.5,35.2687831 40.5,33.75 L40.5,18.351 Z M37.75,11.5 L10.25,11.5 C8.73121694,11.5 7.5,12.7312169 7.5,14.25 L7.5,15.499 L24,24.573411 L40.5,15.498 L40.5,14.25 C40.5,12.7312169 39.2687831,11.5 37.75,11.5 Z" id="🎨-Color"></path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <br /> &copy; Nikhil Hari 2020.
+    </footer>
+</body>
+
+</html>
