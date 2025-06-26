@@ -38,7 +38,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
         
       - name: Build with Astro
-        run: deno npm:astro build --allow-env
+        run: deno --allow-all npm:astro build
         working-directory: ${{ env.BUILD_PATH }}
         
       - name: Deploy
