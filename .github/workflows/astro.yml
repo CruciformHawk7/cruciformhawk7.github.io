@@ -34,7 +34,7 @@ jobs:
           deno-version: v2.x
           
       - name: Install dependencies
-        run: deno install --allow-env
+        run: deno install
         working-directory: ${{ env.BUILD_PATH }}
         
       - name: Build with Astro
